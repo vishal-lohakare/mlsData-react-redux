@@ -1,0 +1,180 @@
+@import "styles/variables.scss";
+
+.download-files {
+  margin: 0 10px;
+}
+
+.download-result {
+  .previewLink {
+    vertical-align: middle;
+  }
+  tbody {
+    background: $white;
+  }
+}
+
+.no-result {
+  color: #ff0000;
+  text-align: center;
+}
+
+.mr-2 {
+  margin-right: 2px;
+}
+.homeScreen {
+  .card-header, .card-footer {
+    background: $white;
+    border: none;
+  }
+  .showMoreOptions {
+    button {
+      padding: 0;
+    }
+  }
+}
+
+.modal-dialog.previewModal {
+  max-width: 90%;
+  height: 60%;
+  top: 5%;
+}
+
+.previewDialog {
+  height: 550px;
+  overflow: auto;
+
+  .noRecords {
+    color: $error-color;
+  }
+
+  [disabled] {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+
+  .clearFilters {
+    width: 80%;
+    text-align: right;
+    margin: 0 auto 10px auto;
+  }
+  .appliedFilters {
+    margin-bottom: 10px;
+    padding-left: 5px;
+
+    .columnName{
+      display: block;
+      margin-bottom: 5px;
+
+      span {
+        font-weight: bold;
+      }
+      .filter {
+        display: inline;
+      }
+    }
+    .filters a {
+      border: 1px solid $grey;
+      border-radius: 100px;
+      cursor: pointer;
+      margin-right: 10px;
+      padding: 2px 10px;
+    }
+  }
+  .tableHeading {
+    text-align: center;
+    margin-bottom: 5px;
+  }
+  tr {
+    position: relative;
+  }
+  td {
+    border: 1px solid rgb(202, 202, 202);
+    background-color: rgb(240, 240, 240);
+    max-width: 200px;
+    font-size: 13px;
+  }
+  td:not(.records) {
+    position: relative;
+    cursor: pointer;
+  }
+  .highlighted {
+    background: #9e9c9c;
+  }
+  .pagination {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px 5px 5px;
+  }
+  .previewFilters {
+    position: absolute;
+    z-index: 10;
+    background: #fff;
+  }
+  .previewFilters .content {
+    height: 150px;
+    overflow-y: auto;
+  }
+  .previewFilters .form-check-input {
+    position: unset;
+  }
+  .applyFilter {
+    margin: 10px 0 10px 0;
+  }
+  .previewFilters.form-control {
+    width: 200px;
+    height: 200px;
+  }
+  .previewFilters > div {
+    input {
+      margin-left: 0
+    }
+    label {
+      padding-left: 10px;
+      word-break: break-all;
+      display: inline;
+    }
+    .clearSearch {
+      font-size: 14px;
+      margin-left: 40%;
+      padding: 0 0.75rem;
+    }
+  }
+  .previewFilters .filterSearch {
+    padding: 0.2em;
+  }
+}
+
+.toggleLookupButton {
+  position: absolute;
+  right: 5%;
+  top: 1%;
+}
+.hideLookup {
+  display: none;
+}
+.downloadPreview {
+  tbody {
+    height: 230px;
+    overflow-y: auto;
+    width: 100%;
+  }
+
+  td {
+    border: 1px solid #ccc;
+    min-width: 100px;
+    max-width: 300px;
+    word-break: break-word;
+
+   .checkbox {
+      position: relative;
+    }
+  }
+}
+
+.dragBar {
+  width: 7px;
+  border: 1px dotted $grey;
+  background: $border;
+  cursor: w-resize;
+}

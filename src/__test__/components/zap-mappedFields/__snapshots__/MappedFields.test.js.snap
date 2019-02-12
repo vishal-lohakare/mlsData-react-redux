@@ -1,0 +1,607 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Zap Mapped Fields component should render correctly. 1`] = `
+<div
+  className="mappedFields"
+>
+  <Card
+    onScroll={[Function]}
+    tag="div"
+  >
+    <CardHeader
+      className="cardHeaderWhite"
+      tag="div"
+    >
+      <span
+        className="h5 d-inline-block"
+      >
+        Mapped Fields
+      </span>
+    </CardHeader>
+    <CardBody
+      className="p-0"
+      tag="div"
+    >
+      <div
+        className="mappedFields"
+      >
+        <Row
+          className="m-0 mappedHeaderRow"
+          tag="div"
+        >
+          <Col
+            className="mappedTableHeader"
+            tag="div"
+            widths={
+              Array [
+                "xs",
+                "sm",
+                "md",
+                "lg",
+                "xl",
+              ]
+            }
+            xs="2"
+          >
+            Select
+          </Col>
+          <Col
+            className="mappedTableHeader"
+            tag="div"
+            widths={
+              Array [
+                "xs",
+                "sm",
+                "md",
+                "lg",
+                "xl",
+              ]
+            }
+            xs="3"
+          >
+            Field
+            <div
+              className="tableSearch"
+            >
+              <img
+                className="tableSearchIcon"
+                id="field"
+                onClick={[Function]}
+                src="test-file-stub"
+              />
+            </div>
+          </Col>
+          <Col
+            className="mappedTableHeader"
+            tag="div"
+            widths={
+              Array [
+                "xs",
+                "sm",
+                "md",
+                "lg",
+                "xl",
+              ]
+            }
+            xs="5"
+          >
+            <span>
+              Description 
+              <i
+                className="fa fa-info-circle"
+                id="descriptionTooltip"
+              />
+            </span>
+            <div
+              className="tableSearch"
+            >
+              <img
+                className="tableSearchIcon"
+                id="desc"
+                onClick={[Function]}
+                src="test-file-stub"
+              />
+            </div>
+            <Tooltip
+              autohide={true}
+              delay={
+                Object {
+                  "hide": 250,
+                  "show": 0,
+                }
+              }
+              hideArrow={false}
+              isOpen={false}
+              placement="top"
+              placementPrefix="bs-tooltip"
+              target="descriptionTooltip"
+              toggle={[Function]}
+            >
+              Description is a combination of tableSystemName, longName and lookupName
+            </Tooltip>
+          </Col>
+          <Col
+            className="mappedTableHeader"
+            tag="div"
+            widths={
+              Array [
+                "xs",
+                "sm",
+                "md",
+                "lg",
+                "xl",
+              ]
+            }
+            xs="2"
+          >
+            Relevancy in %
+          </Col>
+        </Row>
+        <div
+          className="mappedTable"
+        >
+          <Row
+            className="m-0 mappedTableCell"
+            key="FYrN2AtQrhaM13cepV4p"
+            tag="div"
+          >
+            <Col
+              className=""
+              tag="div"
+              widths={
+                Array [
+                  "xs",
+                  "sm",
+                  "md",
+                  "lg",
+                  "xl",
+                ]
+              }
+              xs="2"
+            >
+              <FormGroup
+                check={true}
+                tag="div"
+              >
+                <Input
+                  checked={true}
+                  className="checkbox"
+                  data-index={0}
+                  id="checkbox_0"
+                  onChange={[Function]}
+                  type="checkbox"
+                  value="selling_member_address"
+                />
+              </FormGroup>
+            </Col>
+            <Col
+              className="tableSystemName"
+              onClick={[Function]}
+              tag="div"
+              widths={
+                Array [
+                  "xs",
+                  "sm",
+                  "md",
+                  "lg",
+                  "xl",
+                ]
+              }
+              xs="3"
+            >
+              <span
+                id="field_FYrN2AtQrhaM13cepV4p"
+              >
+                selling_member_address
+              </span>
+              <Tooltip
+                autohide={true}
+                className="customTooltip "
+                delay={
+                  Object {
+                    "hide": 250,
+                    "show": 0,
+                  }
+                }
+                hideArrow={false}
+                isOpen={false}
+                placement="right"
+                placementPrefix="bs-tooltip"
+                target="field_FYrN2AtQrhaM13cepV4p"
+                toggle={[Function]}
+              >
+                <span>
+                  No Sample Data Available...
+                </span>
+              </Tooltip>
+            </Col>
+            <Col
+              tag="div"
+              widths={
+                Array [
+                  "xs",
+                  "sm",
+                  "md",
+                  "lg",
+                  "xl",
+                ]
+              }
+              xs="5"
+            >
+              selling_member_address 
+            </Col>
+            <Col
+              tag="div"
+              widths={
+                Array [
+                  "xs",
+                  "sm",
+                  "md",
+                  "lg",
+                  "xl",
+                ]
+              }
+              xs="2"
+            >
+              0
+            </Col>
+          </Row>
+          <Row
+            className="m-0 mappedTableCell"
+            key="7OtNhsQo9EL7OdyVImlf"
+            tag="div"
+          >
+            <Col
+              className=""
+              tag="div"
+              widths={
+                Array [
+                  "xs",
+                  "sm",
+                  "md",
+                  "lg",
+                  "xl",
+                ]
+              }
+              xs="2"
+            >
+              <FormGroup
+                check={true}
+                tag="div"
+              >
+                <Input
+                  checked={false}
+                  className="checkbox"
+                  data-index={1}
+                  id="checkbox_1"
+                  onChange={[Function]}
+                  type="checkbox"
+                  value="ADD0"
+                />
+              </FormGroup>
+            </Col>
+            <Col
+              className="tableSystemName"
+              onClick={[Function]}
+              tag="div"
+              widths={
+                Array [
+                  "xs",
+                  "sm",
+                  "md",
+                  "lg",
+                  "xl",
+                ]
+              }
+              xs="3"
+            >
+              <span
+                id="field_7OtNhsQo9EL7OdyVImlf"
+              >
+                ADD0
+              </span>
+              <Tooltip
+                autohide={true}
+                className="customTooltip "
+                delay={
+                  Object {
+                    "hide": 250,
+                    "show": 0,
+                  }
+                }
+                hideArrow={false}
+                isOpen={false}
+                placement="right"
+                placementPrefix="bs-tooltip"
+                target="field_7OtNhsQo9EL7OdyVImlf"
+                toggle={[Function]}
+              >
+                <span>
+                  No Sample Data Available...
+                </span>
+              </Tooltip>
+            </Col>
+            <Col
+              tag="div"
+              widths={
+                Array [
+                  "xs",
+                  "sm",
+                  "md",
+                  "lg",
+                  "xl",
+                ]
+              }
+              xs="5"
+            >
+              ADD0 |  Street Address
+            </Col>
+            <Col
+              tag="div"
+              widths={
+                Array [
+                  "xs",
+                  "sm",
+                  "md",
+                  "lg",
+                  "xl",
+                ]
+              }
+              xs="2"
+            >
+              100.00
+            </Col>
+          </Row>
+          <Row
+            className="m-0 mappedTableCell"
+            key="LfN3mCZe8QiN89tqVn8x"
+            tag="div"
+          >
+            <Col
+              className=""
+              tag="div"
+              widths={
+                Array [
+                  "xs",
+                  "sm",
+                  "md",
+                  "lg",
+                  "xl",
+                ]
+              }
+              xs="2"
+            >
+              <FormGroup
+                check={true}
+                tag="div"
+              >
+                <Input
+                  checked={false}
+                  className="checkbox"
+                  data-index={2}
+                  id="checkbox_2"
+                  onChange={[Function]}
+                  type="checkbox"
+                  value="OFFICE_14"
+                />
+              </FormGroup>
+            </Col>
+            <Col
+              className="tableSystemName"
+              onClick={[Function]}
+              tag="div"
+              widths={
+                Array [
+                  "xs",
+                  "sm",
+                  "md",
+                  "lg",
+                  "xl",
+                ]
+              }
+              xs="3"
+            >
+              <span
+                id="field_LfN3mCZe8QiN89tqVn8x"
+              >
+                OFFICE_14
+              </span>
+              <Tooltip
+                autohide={true}
+                className="customTooltip "
+                delay={
+                  Object {
+                    "hide": 250,
+                    "show": 0,
+                  }
+                }
+                hideArrow={false}
+                isOpen={false}
+                placement="right"
+                placementPrefix="bs-tooltip"
+                target="field_LfN3mCZe8QiN89tqVn8x"
+                toggle={[Function]}
+              >
+                <span>
+                  No Sample Data Available...
+                </span>
+              </Tooltip>
+            </Col>
+            <Col
+              tag="div"
+              widths={
+                Array [
+                  "xs",
+                  "sm",
+                  "md",
+                  "lg",
+                  "xl",
+                ]
+              }
+              xs="5"
+            >
+              OFFICE_14 |  Zip
+            </Col>
+            <Col
+              tag="div"
+              widths={
+                Array [
+                  "xs",
+                  "sm",
+                  "md",
+                  "lg",
+                  "xl",
+                ]
+              }
+              xs="2"
+            >
+              0
+            </Col>
+          </Row>
+        </div>
+      </div>
+    </CardBody>
+  </Card>
+  <section
+    className="customSection"
+  >
+    <Row
+      tag="div"
+    >
+      <Col
+        lg="6"
+        md="6"
+        tag="div"
+        widths={
+          Array [
+            "xs",
+            "sm",
+            "md",
+            "lg",
+            "xl",
+          ]
+        }
+        xs="12"
+      >
+        <FormGroup
+          tag="div"
+        >
+          <Label
+            for="autocomplete"
+            tag="label"
+            widths={
+              Array [
+                "xs",
+                "sm",
+                "md",
+                "lg",
+                "xl",
+              ]
+            }
+          >
+            Function Expression
+          </Label>
+          <Connect(AutoComplete)
+            onChange={[Function]}
+            selectedFields={
+              Array [
+                Object {
+                  "active": true,
+                  "id": "FYrN2AtQrhaM13cepV4p",
+                  "longName": "null",
+                  "lookupName": "null",
+                  "relevance": 0,
+                  "resource": "Property",
+                  "resourceStandardName": "Residential",
+                  "shortName": "SellMbrAddy",
+                  "standardName": "null",
+                  "tableSystemName": "selling_member_address",
+                },
+              ]
+            }
+            udfs={Array []}
+          />
+        </FormGroup>
+      </Col>
+      <Col
+        className="d-flex"
+        lg="3"
+        md="3"
+        tag="div"
+        widths={
+          Array [
+            "xs",
+            "sm",
+            "md",
+            "lg",
+            "xl",
+          ]
+        }
+        xs="12"
+      >
+        <Button
+          className="previewButton zapButton align-self-center"
+          color="secondary"
+          disabled={true}
+          onClick={[Function]}
+          tag="button"
+        >
+          Preview
+        </Button>
+      </Col>
+    </Row>
+  </section>
+  <section
+    className="customSection"
+  >
+    <Card
+      tag="div"
+    >
+      <CardHeader
+        className="functionDetails"
+        tag="div"
+      >
+        Function Details
+      </CardHeader>
+      <CardBody
+        tag="div"
+      >
+        <div>
+          <p>
+            <span
+              className="font-weight-bold"
+            >
+              Selected Fields: 
+            </span>
+            <span>
+              selling_member_address
+            </span>
+          </p>
+        </div>
+      </CardBody>
+    </Card>
+    <div
+      className="buttonWrapper"
+    >
+      <Button
+        className="zapButton"
+        color="secondary"
+        disabled={true}
+        onClick={[Function]}
+        tag="button"
+      >
+        Reset Mapping
+      </Button>
+      <Button
+        className="saveButton zapButton"
+        color="secondary"
+        disabled={true}
+        onClick={[Function]}
+        tag="button"
+      >
+        Save
+      </Button>
+    </div>
+  </section>
+</div>
+`;

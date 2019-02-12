@@ -1,0 +1,106 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Zap AutoSuggestion component should render correctly without value prop. 1`] = `
+<div>
+  <Row
+    tag="div"
+  >
+    <Col
+      tag="div"
+      widths={
+        Array [
+          "xs",
+          "sm",
+          "md",
+          "lg",
+          "xl",
+        ]
+      }
+      xs="12"
+    >
+      <FormGroup
+        className="autoSuggestInput"
+        tag="div"
+      >
+        <Input
+          autoComplete="off"
+          id="autoComplete"
+          innerRef={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          onKeyPress={[Function]}
+          onKeyUp={[Function]}
+          type="text"
+          value=""
+        />
+      </FormGroup>
+    </Col>
+  </Row>
+</div>
+`;
+
+exports[`Zap AutoSuggestion component should render correctly. 1`] = `
+<div>
+  <Row
+    tag="div"
+  >
+    <Col
+      tag="div"
+      widths={
+        Array [
+          "xs",
+          "sm",
+          "md",
+          "lg",
+          "xl",
+        ]
+      }
+      xs="12"
+    >
+      <FormGroup
+        className="autoSuggestInput"
+        tag="div"
+      >
+        <Input
+          autoComplete="off"
+          id="autoComplete"
+          innerRef={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          onKeyPress={[Function]}
+          onKeyUp={[Function]}
+          type="text"
+          value=""
+        />
+      </FormGroup>
+      <div>
+        <ListGroup
+          className="autoSuggestList"
+          flush={true}
+          role="list"
+          tag="ul"
+        >
+          <ListGroupItem
+            className="autoSuggestListItem"
+            tag="li"
+          />
+          <ListGroupItem
+            className="autoSuggestListItem"
+            key="0"
+            onClick={[Function]}
+            onKeyDown={[Function]}
+            tag="li"
+          />
+          <ListGroupItem
+            className="autoSuggestListItem"
+            key="1"
+            onClick={[Function]}
+            onKeyDown={[Function]}
+            tag="li"
+          />
+        </ListGroup>
+      </div>
+    </Col>
+  </Row>
+</div>
+`;

@@ -1,0 +1,69 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Zap Autocomplete component should render correctly. 1`] = `
+<FormGroup
+  className="position-relative"
+  tag="div"
+>
+  <Input
+    className="form-control"
+    id="autocomplete"
+    innerRef={[Function]}
+    name="autocomplete"
+    onChange={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    type="text"
+    value=""
+  />
+  <ul
+    className="autocomplete__container"
+    id="listBox"
+    role="listbox"
+  >
+    <li
+      className="autocomplete__option variable"
+      key="0"
+      onClick={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      role="option"
+      tabIndex="-1"
+    >
+      ADD0
+    </li>
+    <li
+      className="autocomplete__option variable"
+      key="1"
+      onClick={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      role="option"
+      tabIndex="-1"
+    >
+      OFFICE_14
+    </li>
+    <li
+      className="autocomplete__option udf"
+      key="2"
+      onClick={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      role="option"
+      tabIndex="-1"
+    >
+      SUM_ALL
+    </li>
+  </ul>
+  <div
+    className="autocomplete__option__info"
+  >
+    <span
+      className="autocomplete__option__info--type"
+    />
+    <span
+      className="autocomplete__option__info--doc"
+    />
+  </div>
+</FormGroup>
+`;

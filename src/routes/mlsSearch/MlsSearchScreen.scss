@@ -1,0 +1,66 @@
+@import "styles/variables.scss";
+
+.mls-search-table.table {
+  font-size: 15px;
+
+  thead {
+    th {
+      vertical-align: middle;
+      &:hover {
+        cursor: pointer;
+      }
+      .fa {
+        margin-left: 10px;
+        &.inactive {
+          color: $disableLinkColor;
+        }
+      }
+    }
+  }
+
+  tbody {
+    background: $white;
+  }
+
+  .updateMLS {
+    cursor: pointer;
+  }
+
+  [disabled] {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+
+  .centered {
+    text-align: center;
+  }
+}
+
+.alert-success.successMsg {
+  margin-bottom: 0;
+}
+
+.mlsSearchScreen {
+  position: relative;
+  .customPagination {
+    margin-top: 0;
+  }
+  .addNewButton {
+    color: $white;
+    text-decoration: none;
+    position: absolute;
+    right: 1%;
+  }
+}
+
+.urlValue {
+  word-break: break-word;
+}
+
+.customModal {
+  top: 10%;
+}
+
+.successMessage {
+  margin-bottom: 10px;
+}

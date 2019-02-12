@@ -1,0 +1,43 @@
+@import "styles/variables.scss";
+
+.mappingContainer {
+    .card-header {
+        text-align: left;
+    }
+    .moveItemWithArrow {
+        position: relative;
+    }
+    .arrowsSection {
+        position: absolute;
+        top: 40%;
+        left: 33%;
+
+        .mappedArrow, .unmappedArrow {
+            width: 40px;
+            height: 43px;
+            font-size: 30px;
+            color: #fff;
+            text-align: center;
+            margin-bottom: 20px;
+            display: block;
+
+            &::before {
+              margin: 0px 0 0 -6px;
+            }
+        }
+    }
+    .listScroll {
+      height: 500px;
+      overflow-y: auto;
+    }
+    li:hover {
+      background-color: #f7f7f7;
+    }
+    li.selected {
+      background-color: #cfd1d1;
+    }
+    .disabledNavigationLinks {
+      pointer-events: none;
+      color: $grey;
+    }
+}

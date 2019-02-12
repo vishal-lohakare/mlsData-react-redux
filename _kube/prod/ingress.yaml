@@ -1,0 +1,16 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: mls-data-platform-web-ui-ingress
+  namespace: dataengr
+  annotations:
+    kubernetes.io/ingress.class: "nginx"
+spec:
+  rules:
+  - host: mls-data-platform-web-ui.ds.aws.ziprealty.com
+    http:
+      paths:
+      - path: /
+        backend:
+          serviceName: mls-data-platform-web-ui
+          servicePort: 1338

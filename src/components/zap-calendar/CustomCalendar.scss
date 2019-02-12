@@ -1,0 +1,32 @@
+@import 'styles/variables.scss';
+
+.customCalendarWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  .leftDateContent {
+    display: flex;
+    align-items: center;
+  }
+  .calendarWrapper {
+    position: absolute;
+    top: 35px;
+    left: 0;
+    z-index: 11;
+  }
+  .calendarButton {
+    display: inline-block;
+    margin-left: 15px;
+    background-color: transparent;
+    color: $iconColor;
+    border: none;
+    font-size: 1.3125em;
+    &:focus, &:hover, &.btn-secondary:not(:disabled):not(.disabled):active {
+      background-color: transparent;
+      color: $linkColor;
+    }
+    &.selected {
+      color: $linkColor;
+    }
+  }
+}

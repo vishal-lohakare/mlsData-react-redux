@@ -1,0 +1,84 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ZapHeader component should render correctly. 1`] = `
+<header>
+  <div
+    className="headerWrapper"
+  >
+    <Row
+      tag="div"
+    >
+      <Col
+        className="menuWrapper"
+        md="4"
+        tag="div"
+        widths={
+          Array [
+            "xs",
+            "sm",
+            "md",
+            "lg",
+            "xl",
+          ]
+        }
+        xs="4"
+      >
+        <Button
+          className="fa fa-bars menuIcon"
+          color="secondary"
+          onClick={[Function]}
+          tag="button"
+        />
+      </Col>
+      <Col
+        className="logoWrapper"
+        md="4"
+        tag="div"
+        widths={
+          Array [
+            "xs",
+            "sm",
+            "md",
+            "lg",
+            "xl",
+          ]
+        }
+        xs="4"
+      >
+        <img
+          height="38"
+          src="test-file-stub"
+          width="120"
+        />
+      </Col>
+      <Col
+        className="logoutWrapper"
+        md="4"
+        onClick={[Function]}
+        tag="div"
+        widths={
+          Array [
+            "xs",
+            "sm",
+            "md",
+            "lg",
+            "xl",
+          ]
+        }
+        xs="4"
+      >
+        <div>
+          <i
+            className="fa fa-power-off logoutIcon"
+          />
+          <span
+            className="logoutText"
+          >
+            Logout
+          </span>
+        </div>
+      </Col>
+    </Row>
+  </div>
+</header>
+`;

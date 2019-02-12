@@ -1,0 +1,72 @@
+@import "styles/variables.scss";
+
+.mainWrapper .zapPanel {
+  padding: 0;
+
+  .panelWrapper{
+    position: fixed;
+    height: 100%;
+    background-color: $white;
+    z-index: 10;
+    border-right: solid 1px $background;
+  }
+
+  .panelCollapse{
+    width: 76px;
+  }
+
+  .navbar {
+    padding: 0 ;
+  }
+
+  .nav-item {
+    border-bottom: 1px solid $borderColor;
+    background: $white;
+    cursor: pointer;
+
+    .nav-item-section {
+      padding: 20px;
+    }
+
+    .panelIcons{
+      color: $iconColor;
+      margin-right: 10px;
+    }
+
+    .linkText {
+      color: $dark-gray-color;
+      padding-left: 10px;
+      text-decoration: none;
+    }
+
+    &.deActivated {
+      pointer-events: none;
+      .panelIcons{
+        color: $disableLinkColor;
+      }
+
+      .linkText {
+        color: $disableLinkColor;
+      }
+    }
+    &.activated {
+      .panelIcons{
+        color: $iconColor;
+      }
+
+      .linkText {
+        color: $dark-gray-color;
+      }
+      &.selected {
+        .panelIcons{
+          color: $linkColor;
+        }
+
+        .linkText {
+          color: $linkColor;
+        }
+      }
+    }
+
+  }
+}

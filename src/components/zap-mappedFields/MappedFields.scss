@@ -1,0 +1,155 @@
+@import "styles/variables.scss";
+@import "styles/mixins.scss";
+.customSection {
+  margin-top: 1rem;
+}
+
+.tooltip.customTooltip{
+  &.show {
+    margin-left: 10px;
+    opacity: 1;
+  }
+  .tooltip-inner{
+    background-color: $white;
+    border-top: 0.5px solid $tooltipColor;
+    color: $iconColor;
+    @include boxShadow(5px, 0.5px, 10px, 0, $tooltip-box-shadow-color);
+    max-height: 350px;
+    overflow-y: auto;
+    min-width: 150px;
+  }
+  &.hasSampleData{
+    .tooltip-inner{
+      padding: 0;
+      border-top: 0.5px solid $tooltipColor;
+      @include boxShadow(5px, 0.5px, 10px, 0, $tooltip-box-shadow-color);
+    }
+  }
+  .arrow::before{
+    border-right-color: $grey;
+  }
+}
+
+.sampleDataList{
+  margin: 0;
+  padding: 0;
+  li{
+    list-style: none;
+    border-bottom: 1px solid $borderColor;
+    padding: 6px;
+    &:hover {
+      cursor: default;
+    }
+  }
+}
+
+.mappedTable {
+  height: 350px;
+  overflow-y: auto;
+}
+.mappedTableHeader {
+  font-weight: bold;
+  .autoSuggestList {
+    font-weight: normal;
+  }
+}
+.mappedHeaderRow {
+  padding-right: 10px;
+}
+.mappedTableHeader, .mappedTableCell {
+  padding: 15px;
+  border-bottom: 1px solid $border;
+  .tableSystemName {
+    color: $tableLinkColor;
+    cursor: pointer;
+  }
+ .checkbox {
+    position: relative;
+  }
+}
+.mappedFields {
+  position: relative;
+  .functionDetails {
+    font-size: 15px;
+    font-weight: bold;
+  }
+  .classDescDropdown{
+    position: absolute;
+    top: -42px;
+    left: 0;
+  }
+}
+
+.tableSearch {
+  display: inline;
+  position: relative;
+
+  .tableSearchIcon {
+    width: 25px;
+    height: auto;
+    cursor: pointer;
+  }
+
+  .tableSearchInput {
+    padding: 4px;
+    font-size: 14px;
+    left: 5px;
+    display: none;
+    @include boxShadow(0, 0, 8px, 2px, $grey);
+
+    &:focus {
+      outline: none;
+    }
+
+    &.active {
+      display: block;
+    }
+  }
+  .autoSuggestList {
+    position: absolute;
+    width: 200%;
+    z-index: 2;
+  }
+}
+
+.addMoreButton {
+  margin-left: 10px;
+}
+
+.buttonWrapper {
+  text-align: right;
+  margin-top: 20px;
+
+  .saveButton {
+    margin-left: 20px;
+  }
+}
+
+.customModal {
+  top: 30%;
+}
+
+.suggestionBox {
+  position: absolute;
+  z-index: 1;
+	background-color: $white;
+	border: 1px solid $border;
+	width: 100%;
+	height: 100px;
+  overflow: auto;
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      padding: 2px;
+      cursor: pointer;
+    }
+
+    li:hover {
+      background: $border;
+    }
+  }
+}

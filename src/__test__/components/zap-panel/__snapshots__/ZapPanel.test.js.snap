@@ -1,0 +1,271 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ZapPanel component should render correctly 1`] = `
+<Fragment>
+  <Col
+    className="zapPanel"
+    md="1"
+    tag="div"
+    widths={
+      Array [
+        "xs",
+        "sm",
+        "md",
+        "lg",
+        "xl",
+      ]
+    }
+    xs="4"
+  >
+    <div
+      className="panelWrapper "
+    >
+      <Navbar
+        color="faded"
+        expand={false}
+        light={true}
+        tag="nav"
+      >
+        <Nav
+          navbar={true}
+          tag="ul"
+          vertical={false}
+        >
+          <NavItem
+            className="deActivated selected"
+            key="0"
+            onClick={[Function]}
+            tag="li"
+          >
+            <div
+              className="nav-item-section"
+            >
+              <NavLink
+                activeClassName="active"
+                aria-current="page"
+                className="linkText"
+                to={
+                  Object {
+                    "pathname": "/mlsSearch",
+                    "state": Object {
+                      "selectedLink": "/mlsSearch",
+                    },
+                  }
+                }
+              >
+                <i
+                  className="fa fa-search panelIcons"
+                />
+                Search MLS
+              </NavLink>
+            </div>
+          </NavItem>
+          <NavItem
+            className="deActivated"
+            key="1"
+            onClick={[Function]}
+            tag="li"
+          >
+            <div
+              className="nav-item-section"
+            >
+              <NavLink
+                activeClassName="active"
+                aria-current="page"
+                className="linkText"
+                to={
+                  Object {
+                    "pathname": "/home",
+                    "state": Object {
+                      "selectedLink": "/home",
+                    },
+                  }
+                }
+              >
+                <i
+                  className="fa fa-database panelIcons"
+                />
+                Configure MLS
+              </NavLink>
+            </div>
+          </NavItem>
+          <NavItem
+            className="deActivated"
+            key="2"
+            onClick={[Function]}
+            tag="li"
+          >
+            <div
+              className="nav-item-section"
+            >
+              <NavLink
+                activeClassName="active"
+                aria-current="page"
+                className="linkText"
+                to={
+                  Object {
+                    "pathname": "/urlBuilder",
+                    "state": Object {
+                      "selectedLink": "/urlBuilder",
+                    },
+                  }
+                }
+              >
+                <i
+                  className="fa fa-cog panelIcons"
+                />
+                Build MLS
+              </NavLink>
+            </div>
+          </NavItem>
+          <NavItem
+            className="deActivated"
+            key="3"
+            onClick={[Function]}
+            tag="li"
+          >
+            <div
+              className="nav-item-section"
+            >
+              <NavLink
+                activeClassName="active"
+                aria-current="page"
+                className="linkText"
+                to={
+                  Object {
+                    "pathname": "/canonicalMappings",
+                    "state": Object {
+                      "selectedLink": "/canonicalMappings",
+                    },
+                  }
+                }
+              >
+                <i
+                  className="fa fa-sitemap panelIcons"
+                />
+                Canonical MLS
+              </NavLink>
+            </div>
+          </NavItem>
+          <NavItem
+            className="deActivated"
+            key="4"
+            onClick={[Function]}
+            tag="li"
+          >
+            <div
+              className="nav-item-section"
+            >
+              <NavLink
+                activeClassName="active"
+                aria-current="page"
+                className="linkText"
+                to={
+                  Object {
+                    "pathname": "/standardValue",
+                    "state": Object {
+                      "selectedLink": "/standardValue",
+                    },
+                  }
+                }
+              >
+                <i
+                  className="fa fa-exchange panelIcons"
+                />
+                Standard Value
+              </NavLink>
+            </div>
+          </NavItem>
+          <NavItem
+            className="deActivated"
+            key="5"
+            onClick={[Function]}
+            tag="li"
+          >
+            <div
+              className="nav-item-section"
+            >
+              <NavLink
+                activeClassName="active"
+                aria-current="page"
+                className="linkText"
+                to={
+                  Object {
+                    "pathname": "/scheduler",
+                    "state": Object {
+                      "selectedLink": "/scheduler",
+                    },
+                  }
+                }
+              >
+                <i
+                  className="fa fa-calendar panelIcons"
+                />
+                Scheduler
+              </NavLink>
+            </div>
+          </NavItem>
+          <NavItem
+            className="deActivated"
+            key="6"
+            onClick={[Function]}
+            tag="li"
+          >
+            <div
+              className="nav-item-section"
+            >
+              <NavLink
+                activeClassName="active"
+                aria-current="page"
+                className="linkText"
+                to={
+                  Object {
+                    "pathname": "/monitoring",
+                    "state": Object {
+                      "selectedLink": "/monitoring",
+                    },
+                  }
+                }
+              >
+                <i
+                  className="fa fa-desktop panelIcons"
+                />
+                Monitoring Screen
+              </NavLink>
+            </div>
+          </NavItem>
+          <NavItem
+            className="deActivated"
+            key="7"
+            onClick={[Function]}
+            tag="li"
+          >
+            <div
+              className="nav-item-section"
+            >
+              <NavLink
+                activeClassName="active"
+                aria-current="page"
+                className="linkText"
+                to={
+                  Object {
+                    "pathname": "/dataConstraints",
+                    "state": Object {
+                      "selectedLink": "/dataConstraints",
+                    },
+                  }
+                }
+              >
+                <i
+                  className="fa fa-cogs panelIcons"
+                />
+                Data Constraints Screen
+              </NavLink>
+            </div>
+          </NavItem>
+        </Nav>
+      </Navbar>
+    </div>
+  </Col>
+</Fragment>
+`;

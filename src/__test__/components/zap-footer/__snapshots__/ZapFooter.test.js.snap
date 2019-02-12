@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ZapFooter component should render correctly. 1`] = `
+<footer>
+  <div
+    className="footer-wrapper"
+  >
+    ©2019 ZapLabs LLC. Proprietary technology. All rights reserved.
+  </div>
+</footer>
+`;

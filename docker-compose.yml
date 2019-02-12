@@ -1,0 +1,13 @@
+node:
+  image: zaplabs/node/mls-data-platform-ui
+  environment:
+    - NODE_ENV=development
+    - KEYMETRICS_SECRET=fw4n5fztohusi84
+    - KEYMETRICS_PUBLIC=u0tw9huot3x4dbe
+    - NODE_NAME=devmachine
+    - SERVICE_NAME=mls-data-platform-ui
+    - STARTUP_SCRIPT_PATH=/opt/node/app/src/server.js
+  ports:
+    - "1338:1338"
+    - "9615:9615"
+    - "9000:9000"

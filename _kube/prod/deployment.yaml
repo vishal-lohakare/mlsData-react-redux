@@ -1,0 +1,47 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: mls-data-platform-web-ui
+  namespace: dataengr
+spec:
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        component: mls-data-platform-web-ui
+      annotations:
+        ad.datadoghq.com/mls-data-platform-web-ui.logs: '[{"source":"node_js", "service":"mls-data-platform-web-ui", "sourcecategory":"sourcecode",   "log_processing_rules":[{"type": "multi_line","name": "parsing_pattern","pattern": "^\\s{0,1}(INFO|ERROR|WARN|DEBUG|[0-9]{3}.|\\[)"}]}]'
+        ad.datadoghq.com/mls-data-platform-web-ui.check_names: '["prometheus"]'
+        ad.datadoghq.com/mls-data-platform-web-ui.init_configs: '[{}]'
+        ad.datadoghq.com/mls-data-platform-web-ui.instances: '[{"prometheus_url": "http://%%host%%:9083/metrics", "namespace": "node_js", "metrics": [ "*"], "tags": ["hostname:%%host%%"]}]'
+    spec:
+      containers:
+        - name: mls-data-platform-web-ui
+          image: dcr.ziprealty.com/zaplabs/dataengr/mls-data-platform-web-ui:rev-develop-8f58771
+          env:
+          - name: NODE_NAME
+            valueFrom:
+              fieldRef:
+                fieldPath: metadata.name
+          - name: SERVICE_NAME
+            value: mls-data-platform-web-ui
+          - name: STARTUP_SCRIPT_PATH
+            value: "/opt/node/app/src/server.js"
+          ports:
+            - containerPort: 1338
+            - containerPort: 9615
+          resources:
+            requests:
+              cpu: 500m
+              memory: 1Gi
+            limits:
+              cpu: 2000m
+              memory: 2Gi
+          volumeMounts:
+            - name: mls-data-platform-web-ui-volume
+              mountPath: /opt/node/app/src/process.yml
+              subPath: process.yml
+      volumes:
+        - name: mls-data-platform-web-ui-volume
+          configMap:
+            name: mls-data-platform-web-ui-config

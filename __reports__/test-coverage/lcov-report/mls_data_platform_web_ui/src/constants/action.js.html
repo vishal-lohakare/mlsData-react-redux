@@ -1,0 +1,449 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for mls_data_platform_web_ui/src/constants/action.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../prettify.css" />
+    <link rel="stylesheet" href="../../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../../index.html">All files</a> / <a href="index.html">mls_data_platform_web_ui/src/constants</a> action.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>127/127</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/0</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>0/0</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>127/127</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line high'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129</td><td class="line-coverage quiet"><span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">export const LOGIN_REQUEST = 'LOGIN_REQUEST'
+export const LOGIN_SUCCESS = 'LOGIN_SUCCESS'
+export const LOGIN_FAILURE = 'LOGIN_FAILURE'
+export const SHOW_FULL_HEADER = 'SHOW_FULL_HEADER'
+export const TOGGLE_SIDEBAR = 'TOGGLE_SIDEBAR'
+export const POST_MLS_DATA_REQUEST = 'POST_MLS_DATA_REQUEST'
+export const POST_MLS_DATA_SUCCESS = 'POST_MLS_DATA_SUCCESS'
+export const POST_MLS_DATA_FAILURE = 'POST_MLS_DATA_FAILURE'
+export const SEARCH_MLS_REQUEST = 'SEARCH_MLS_REQUEST'
+export const SEARCH_MLS_SUCCESS = 'SEARCH_MLS_SUCCESS'
+export const SEARCH_MLS_FAILURE = 'SEARCH_MLS_FAILURE'
+export const GET_MLS_DOWNLOAD_FILES_REQUEST = 'GET_MLS_DOWNLOAD_FILES_REQUEST'
+export const GET_MLS_DOWNLOAD_FILES_SUCCESS = 'GET_MLS_DOWNLOAD_FILES_SUCCESS'
+export const GET_MLS_DOWNLOAD_FILES_FAILURE = 'GET_MLS_DOWNLOAD_FILES_FAILURE'
+export const GET_MLS_DOWNLOAD_UPDATED_FILES_REQUEST = 'GET_MLS_DOWNLOAD_UPDATED_FILES_REQUEST'
+export const GET_MLS_DOWNLOAD_UPDATED_FILES_SUCCESS = 'GET_MLS_DOWNLOAD_UPDATED_FILES_SUCCESS'
+export const GET_MLS_DOWNLOAD_UPDATED_FILES_FAILURE = 'GET_MLS_DOWNLOAD_UPDATED_FILES_FAILURE'
+export const GET_MLS_URL_REQUEST = 'GET_MLS_URL_REQUEST'
+export const GET_MLS_URL_SUCCESS = 'GET_MLS_URL_SUCCESS'
+export const GET_MLS_URL_FAILURE = 'GET_MLS_URL_FAILURE'
+export const SAVE_MLS_URL_REQUEST = 'SAVE_MLS_URL_REQUEST'
+export const SAVE_MLS_URL_SUCCESS = 'SAVE_MLS_URL_SUCCESS'
+export const SAVE_MLS_URL_FAILURE = 'SAVE_MLS_URL_FAILURE'
+export const UPDATE_MLS_URL_REQUEST = 'UPDATE_MLS_URL_REQUEST'
+export const UPDATE_MLS_URL_SUCCESS = 'UPDATE_MLS_URL_SUCCESS'
+export const UPDATE_MLS_URL_FAILURE = 'UPDATE_MLS_URL_FAILURE'
+export const ADD_NEW_URL_DATA = 'ADD_NEW_URL_DATA'
+export const CLEAR_MLS_CONFIG_DATA = 'CLEAR_MLS_CONFIG_DATA'
+export const GET_CANONICAL_FIELDS_REQUEST = 'GET_CANONICAL_FIELDS_REQUEST'
+export const GET_CANONICAL_FIELDS_SUCCESS = 'GET_CANONICAL_FIELDS_SUCCESS'
+export const GET_CANONICAL_FIELDS_FAILURE = 'GET_CANONICAL_FIELDS_FAILURE'
+export const GET_MAPPED_FIELDS_REQUEST = 'GET_MAPPED_FIELDS_REQUEST'
+export const GET_MAPPED_FIELDS_SUCCESS = 'GET_MAPPED_FIELDS_SUCCESS'
+export const GET_MAPPED_FIELDS_FAILURE = 'GET_MAPPED_FIELDS_FAILURE'
+export const UPDATE_MAPPED_FIELDS_REQUEST = 'UPDATE_MAPPED_FIELDS_REQUEST'
+export const UPDATE_MAPPED_FIELDS_SUCCESS = 'UPDATE_MAPPED_FIELDS_SUCCESS'
+export const UPDATE_MAPPED_FIELDS_FAILURE = 'UPDATE_MAPPED_FIELDS_FAILURE'
+export const GET_AVAILABLE_FUNCTIONS_REQUEST = 'GET_AVAILABLE_FUNCTIONS_REQUEST'
+export const GET_AVAILABLE_FUNCTIONS_SUCCESS = 'GET_AVAILABLE_FUNCTIONS_SUCCESS'
+export const GET_AVAILABLE_FUNCTIONS_FAILURE = 'GET_AVAILABLE_FUNCTIONS_FAILURE'
+export const GET_AUTOCOMPLETE_FUNCTIONS_REQUEST = 'GET_AUTOCOMPLETE_FUNCTIONS_REQUEST'
+export const GET_AUTOCOMPLETE_FUNCTIONS_SUCCESS = 'GET_AUTOCOMPLETE_FUNCTIONS_SUCCESS'
+export const GET_AUTOCOMPLETE_FUNCTIONS_FAILURE = 'GET_AUTOCOMPLETE_FUNCTIONS_FAILURE'
+export const GET_STANDARD_VALUES_REQUEST = 'GET_STANDARD_VALUES_REQUEST'
+export const GET_STANDARD_VALUES_SUCCESS = 'GET_STANDARD_VALUES_SUCCESS'
+export const GET_STANDARD_VALUES_FAILURE = 'GET_STANDARD_VALUES_FAILURE'
+export const GET_MAPPED_VALUES_REQUEST = 'GET_MAPPED_VALUES_REQUEST'
+export const GET_MAPPED_VALUES_SUCCESS = 'GET_MAPPED_VALUES_SUCCESS'
+export const GET_MAPPED_VALUES_FAILURE = 'GET_MAPPED_VALUES_FAILURE'
+export const GET_UNMAPPED_VALUES_REQUEST = 'GET_UNMAPPED_VALUES_REQUEST'
+export const GET_UNMAPPED_VALUES_SUCCESS = 'GET_UNMAPPED_VALUES_SUCCESS'
+export const GET_UNMAPPED_VALUES_FAILURE = 'GET_UNMAPPED_VALUES_FAILURE'
+export const POST_MAPPED_VALUES_REQUEST = 'POST_MAPPED_VALUES_REQUEST'
+export const POST_MAPPED_VALUES_SUCCESS = 'POST_MAPPED_VALUES_SUCCESS'
+export const POST_MAPPED_VALUES_FAILURE = 'POST_MAPPED_VALUES_FAILURE'
+export const POST_UNMAPPED_VALUES_REQUEST = 'POST_UNMAPPED_VALUES_REQUEST'
+export const POST_UNMAPPED_VALUES_SUCCESS = 'POST_UNMAPPED_VALUES_SUCCESS'
+export const POST_UNMAPPED_VALUES_FAILURE = 'POST_UNMAPPED_VALUES_FAILURE'
+export const DELETE_MAPPED_VALUES_REQUEST = 'DELETE_MAPPED_VALUES_REQUEST'
+export const DELETE_MAPPED_VALUES_SUCCESS = 'DELETE_MAPPED_VALUES_SUCCESS'
+export const DELETE_MAPPED_VALUES_FAILURE = 'DELETE_MAPPED_VALUES_FAILURE'
+export const DELETE_UNMAPPED_VALUES_REQUEST = 'DELETE_UNMAPPED_VALUES_REQUEST'
+export const DELETE_UNMAPPED_VALUES_SUCCESS = 'DELETE_UNMAPPED_VALUES_SUCCESS'
+export const DELETE_UNMAPPED_VALUES_FAILURE = 'DELETE_UNMAPPED_VALUES_FAILURE'
+export const GET_MLSINFO_SOURCE_REQUEST = 'GET_MLSINFO_SOURCE_REQUEST'
+export const GET_MLSINFO_SOURCE_SUCCESS = 'GET_MLSINFO_SOURCE_SUCCESS'
+export const GET_MLSINFO_SOURCE_FAILURE = 'GET_MLSINFO_SOURCE_FAILURE'
+export const GET_MLS_CANONICAL_FIELDS_REQUEST = 'GET_MLS_CANONICAL_FIELDS_REQUEST'
+export const GET_MLS_CANONICAL_FIELDS_SUCCESS = 'GET_MLS_CANONICAL_FIELDS_SUCCESS'
+export const GET_MLS_CANONICAL_FIELDS_FAILURE = 'GET_MLS_CANONICAL_FIELDS_FAILURE'
+export const POST_NEW_STANDARD_VALUE_REQUEST = 'POST_NEW_STANDARD_VALUE_REQUEST'
+export const POST_NEW_STANDARD_VALUE_SUCCESS = 'POST_NEW_STANDARD_VALUE_SUCCESS'
+export const POST_NEW_STANDARD_VALUE_FAILURE = 'POST_NEW_STANDARD_VALUE_FAILURE'
+export const  GET_CONTEXT_VARIABLES_REQUEST = 'GET_CONTEXT_VARIABLES_REQUEST'
+export const  GET_CONTEXT_VARIABLES_SUCCESS = 'GET_CONTEXT_VARIABLES_SUCCESS'
+export const  GET_CONTEXT_VARIABLES_FAILURE = 'GET_CONTEXT_VARIABLES_FAILURE'
+export const  DELETE_CONTEXT_VARIABLES_REQUEST = 'DELETE_CONTEXT_VARIABLES_REQUEST'
+export const  DELETE_CONTEXT_VARIABLES_SUCCESS = 'DELETE_CONTEXT_VARIABLES_SUCCESS'
+export const  DELETE_CONTEXT_VARIABLES_FAILURE = 'DELETE_CONTEXT_VARIABLES_FAILURE'
+export const ADD_NEW_CONTEXT_VARIABLE_REQUEST = 'ADD_NEW_CONTEXT_VARIABLE_REQUEST'
+export const ADD_NEW_CONTEXT_VARIABLE_SUCCESS = 'ADD_NEW_CONTEXT_VARIABLE_SUCCESS'
+export const ADD_NEW_CONTEXT_VARIABLE_FAILURE = 'ADD_NEW_CONTEXT_VARIABLE_FAILURE'
+export const GET_SUGGEST_RESOURCE_REQUEST = 'GET_SUGGEST_RESOURCE_REQUEST'
+export const GET_SUGGEST_RESOURCE_SUCCESS = 'GET_SUGGEST_RESOURCE_SUCCESS'
+export const GET_SUGGEST_RESOURCE_FAILURE = 'GET_SUGGEST_RESOURCE_FAILURE'
+export const GET_SUGGEST_CLASSES_REQUEST = 'GET_SUGGEST_CLASSES_REQUEST'
+export const GET_SUGGEST_CLASSES_SUCCESS = 'GET_SUGGEST_CLASSES_SUCCESS'
+export const GET_SUGGEST_CLASSES_FAILURE = 'GET_SUGGEST_CLASSES_FAILURE'
+export const GET_SUGGEST_SYSTEM_TABLE_REQUEST = 'GET_SUGGEST_SYSTEM_TABLE_REQUEST'
+export const GET_SUGGEST_SYSTEM_TABLE_SUCCESS = 'GET_SUGGEST_SYSTEM_TABLE_SUCCESS'
+export const GET_SUGGEST_SYSTEM_TABLE_FAILURE = 'GET_SUGGEST_SYSTEM_TABLE_FAILURE'
+export const GET_SUGGEST_LOOKUP_NAME_REQUEST = 'GET_SUGGEST_LOOKUP_NAME_REQUEST'
+export const GET_SUGGEST_LOOKUP_NAME_SUCCESS = 'GET_SUGGEST_LOOKUP_NAME_SUCCESS'
+export const GET_SUGGEST_LOOKUP_NAME_FAILURE = 'GET_SUGGEST_LOOKUP_NAME_FAILURE'
+export const GET_SUGGEST_LOOKUP_VALUE_REQUEST = 'GET_SUGGEST_LOOKUP_VALUE_REQUEST'
+export const GET_SUGGEST_LOOKUP_VALUE_SUCCESS = 'GET_SUGGEST_LOOKUP_VALUE_SUCCESS'
+export const GET_SUGGEST_LOOKUP_VALUE_FAILURE = 'GET_SUGGEST_LOOKUP_VALUE_FAILURE'
+export const GET_METADATA_HIERARCHY_REQUEST = 'GET_METADATA_HIERARCHY_REQUEST'
+export const GET_METADATA_HIERARCHY_SUCCESS = 'GET_METADATA_HIERARCHY_SUCCESS'
+export const GET_METADATA_HIERARCHY_FAILURE = 'GET_METADATA_HIERARCHY_FAILURE'
+export const POST_TRANSFORMATION_PREVIEW_REQUEST = 'POST_TRANSFORMATION_PREVIEW_REQUEST'
+export const POST_TRANSFORMATION_PREVIEW_SUCCESS = 'POST_TRANSFORMATION_PREVIEW_SUCCESS'
+export const POST_TRANSFORMATION_PREVIEW_FAILURE = 'POST_TRANSFORMATION_PREVIEW_FAILURE'
+export const POST_UUID_REQUEST = 'POST_UUID_REQUEST'
+export const POST_UUID_SUCCESS = 'POST_UUID_SUCCESS'
+export const POST_UUID_FAILURE = 'POST_UUID_FAILURE'
+export const GET_METADATA_DOWNLOAD_PREVIEW_REQUEST = 'GET_METADATA_DOWNLOAD_PREVIEW_REQUEST'
+export const GET_METADATA_DOWNLOAD_PREVIEW_SUCCESS = 'GET_METADATA_DOWNLOAD_PREVIEW_SUCCESS'
+export const GET_METADATA_DOWNLOAD_PREVIEW_FAILURE = 'GET_METADATA_DOWNLOAD_PREVIEW_FAILURE'
+export const GET_METADATA_LOOKUP_DOWNLOAD_PREVIEW_REQUEST = 'GET_METADATA_LOOKUP_DOWNLOAD_PREVIEW_REQUEST'
+export const GET_METADATA_LOOKUP_DOWNLOAD_PREVIEW_SUCCESS = 'GET_METADATA_LOOKUP_DOWNLOAD_PREVIEW_SUCCESS'
+export const GET_METADATA_LOOKUP_DOWNLOAD_PREVIEW_FAILURE = 'GET_METADATA_LOOKUP_DOWNLOAD_PREVIEW_FAILURE'
+export const GET_PREVIEW_COL_UNIQUE_VALUES_REQUEST = 'GET_PREVIEW_COL_UNIQUE_VALUES_REQUEST'
+export const GET_PREVIEW_COL_UNIQUE_VALUES_SUCCESS = 'GET_PREVIEW_COL_UNIQUE_VALUES_SUCCESS'
+export const GET_PREVIEW_COL_UNIQUE_VALUES_FAILURE = 'GET_PREVIEW_COL_UNIQUE_VALUES_FAILURE'
+export const  DELETE_URL_HEADER_REQUEST = 'DELETE_URL_HEADER_REQUEST'
+export const  DELETE_URL_HEADER_SUCCESS = 'DELETE_URL_HEADER_SUCCESS'
+export const  DELETE_URL_HEADER_FAILURE = 'DELETE_URL_HEADER_FAILURE'
+export const  DELETE_MLS_URL_REQUEST = 'DELETE_MLS_URL_REQUEST'
+export const  DELETE_MLS_URL_SUCCESS = 'DELETE_MLS_URL_SUCCESS'
+export const  DELETE_MLS_URL_FAILURE = 'DELETE_MLS_URL_FAILURE'
+export const GET_AUTOCOMPLETE_OPTIONS_FAILURE = 'GET_AUTOCOMPLETE_OPTIONS_FAILURE' 
+export const GET_AUTOCOMPLETE_OPTIONS_REQUEST = 'GET_AUTOCOMPLETE_OPTIONS_REQUEST'
+export const GET_AUTOCOMPLETE_OPTIONS_SUCCESS = 'GET_AUTOCOMPLETE_OPTIONS_SUCCESS'
+export const SHOW_SIDEBAR = 'SHOW_SIDEBAR'
+export const HIDE_SIDEBAR = 'HIDE_SIDEBAR'
+export const NAVIGATION_URL_UPDATE = 'NAVIGATION_URL_UPDATE'
+&nbsp;
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Thu Nov 29 2018 15:48:26 GMT+0530 (IST)
+</div>
+</div>
+<script src="../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../sorter.js"></script>
+</body>
+</html>

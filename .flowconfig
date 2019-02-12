@@ -1,0 +1,20 @@
+[ignore]
+<PROJECT_ROOT>/src/__test__/.*
+
+[include]
+
+[libs]
+
+[lints]
+
+[options]
+module.name_mapper.extension='scss' -> '<PROJECT_ROOT>/SCSSFlowStub.js.flow'
+module.name_mapper='^utils\(.*\)$' -> '<PROJECT_ROOT>/src/utils/\1'
+module.name_mapper='^styles\(.*\)$' -> '<PROJECT_ROOT>/src/styles/\1'
+module.name_mapper='^actions\(.*\)$' -> '<PROJECT_ROOT>/src/actions/\1'
+module.name_mapper='^constants\(.*\)$' -> '<PROJECT_ROOT>/src/constants/\1'
+module.name_mapper='^routes\(.*\)$' -> '<PROJECT_ROOT>/src/routes/\1'
+module.name_mapper='^reducers\(.*\)$' -> '<PROJECT_ROOT>/src/reducers/\1'
+module.name_mapper='^components\(.*\)$' -> '<PROJECT_ROOT>/src/components/\1'
+module.name_mapper='^images\(.*\)$' -> '<PROJECT_ROOT>/src/images/\1'
+[strict]

@@ -1,0 +1,372 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Zap Context Variable Panel component should render correctly. 1`] = `
+<div
+  className="contextPanelContainer"
+>
+  <Button
+    className="fa fa-chevron-circle-right hideIcon"
+    color="light"
+    id="toggler"
+    onClick={[Function]}
+    tag="button"
+  />
+  <UncontrolledCollapse
+    toggleEvents={
+      Array [
+        "touchstart",
+        "click",
+      ]
+    }
+    toggler="#toggler"
+  >
+    <Card
+      tag="div"
+    >
+      <CardHeader
+        className="textAlignment"
+        tag="div"
+      >
+        Context Data
+      </CardHeader>
+      <CardBody
+        tag="div"
+      >
+        <div>
+          <FormGroup
+            tag="div"
+          >
+            <Input
+              className="contextSearch"
+              name="search"
+              onChange={[Function]}
+              placeholder="Search"
+              type="search"
+              value=""
+            />
+          </FormGroup>
+          <div
+            className="checkboxList"
+          >
+            <div
+              className="contextVariablesData"
+            >
+              <FormGroup
+                className="checkboxRow"
+                key="24"
+                tag="div"
+              >
+                <Input
+                  className="checkbox_0"
+                  id="PRICE_FIELD"
+                  name="PRICE_FIELD"
+                  onClick={[Function]}
+                  type="checkbox"
+                  value="PRICE_FIELD = ListPrice"
+                />
+                <Label
+                  for="PRICE_FIELD"
+                  tag="label"
+                  widths={
+                    Array [
+                      "xs",
+                      "sm",
+                      "md",
+                      "lg",
+                      "xl",
+                    ]
+                  }
+                >
+                  PRICE_FIELD = ListPrice
+                </Label>
+              </FormGroup>
+              <FormGroup
+                className="checkboxRow"
+                key="22"
+                tag="div"
+              >
+                <Input
+                  className="checkbox_1"
+                  id="STATUS_ACTIVE"
+                  name="STATUS_ACTIVE"
+                  onClick={[Function]}
+                  type="checkbox"
+                  value="STATUS_ACTIVE = 200004325490"
+                />
+                <Label
+                  for="STATUS_ACTIVE"
+                  tag="label"
+                  widths={
+                    Array [
+                      "xs",
+                      "sm",
+                      "md",
+                      "lg",
+                      "xl",
+                    ]
+                  }
+                >
+                  STATUS_ACTIVE = 200004325490
+                </Label>
+              </FormGroup>
+              <FormGroup
+                className="checkboxRow"
+                key="23"
+                tag="div"
+              >
+                <Input
+                  className="checkbox_2"
+                  id="STATUS_PENDING"
+                  name="STATUS_PENDING"
+                  onClick={[Function]}
+                  type="checkbox"
+                  value="STATUS_PENDING = 200004324452"
+                />
+                <Label
+                  for="STATUS_PENDING"
+                  tag="label"
+                  widths={
+                    Array [
+                      "xs",
+                      "sm",
+                      "md",
+                      "lg",
+                      "xl",
+                    ]
+                  }
+                >
+                  STATUS_PENDING = 200004324452
+                </Label>
+              </FormGroup>
+            </div>
+          </div>
+        </div>
+      </CardBody>
+      <CardFooter
+        className="row verticalDivider footerButton"
+        tag="div"
+      >
+        <div
+          className="col-5 addMore"
+          onClick={[Function]}
+        >
+          <i
+            className="fa fa-plus footerIcon"
+            color="primary"
+          />
+          <Label
+            tag="label"
+            widths={
+              Array [
+                "xs",
+                "sm",
+                "md",
+                "lg",
+                "xl",
+              ]
+            }
+          >
+            Add More
+          </Label>
+        </div>
+        <div
+          className="col-3 edit"
+          onClick={[Function]}
+        >
+          <i
+            className="fa fa-pencil footerIcon"
+            color="primary"
+          />
+          <Label
+            tag="label"
+            widths={
+              Array [
+                "xs",
+                "sm",
+                "md",
+                "lg",
+                "xl",
+              ]
+            }
+          >
+            Edit
+          </Label>
+        </div>
+        <div
+          className="col-4 delete"
+          disabled={false}
+          onClick={[Function]}
+        >
+          <i
+            className="fa fa-trash footerIcon"
+            color="primary"
+          />
+          <Label
+            tag="label"
+            widths={
+              Array [
+                "xs",
+                "sm",
+                "md",
+                "lg",
+                "xl",
+              ]
+            }
+          >
+            Delete
+          </Label>
+        </div>
+      </CardFooter>
+    </Card>
+  </UncontrolledCollapse>
+  <Modal
+    autoFocus={true}
+    backdrop={true}
+    backdropTransition={
+      Object {
+        "mountOnEnter": true,
+        "timeout": 150,
+      }
+    }
+    centered={false}
+    className="contextModal"
+    fade={true}
+    isOpen={false}
+    keyboard={true}
+    modalTransition={
+      Object {
+        "timeout": 300,
+      }
+    }
+    onClosed={[Function]}
+    onOpened={[Function]}
+    role="dialog"
+    zIndex={1050}
+  >
+    <ModalHeader
+      charCode={215}
+      closeAriaLabel="Close"
+      tag="h5"
+      toggle={[Function]}
+      wrapTag="div"
+    >
+      Add New
+       Context Variable
+    </ModalHeader>
+    <ModalBody
+      tag="div"
+    >
+      <FormGroup
+        tag="div"
+      >
+        <Label
+          for="MlsHierarchyType"
+          tag="label"
+          widths={
+            Array [
+              "xs",
+              "sm",
+              "md",
+              "lg",
+              "xl",
+            ]
+          }
+        >
+          Metadata Type
+        </Label>
+        <Input
+          id="MlsHierarchyType"
+          name="MlsHierarchyType"
+          onChange={[Function]}
+          type="select"
+          value="MlsHierarchyType"
+        >
+          <option
+            value="MlsHierarchyType"
+          >
+            Select Metadata Type
+          </option>
+          <option
+            value="MD"
+          >
+            Metadata
+          </option>
+          <option
+            value="MDL"
+          >
+            Metadata Lookup
+          </option>
+          <option
+            value="Literal"
+          >
+            Literal
+          </option>
+        </Input>
+      </FormGroup>
+      <FormGroup
+        tag="div"
+      >
+        <Label
+          tag="label"
+          widths={
+            Array [
+              "xs",
+              "sm",
+              "md",
+              "lg",
+              "xl",
+            ]
+          }
+        >
+          Context Variable Name
+        </Label>
+        <Input
+          id="contextVariableName"
+          name="contextVariableName"
+          onChange={[Function]}
+          type="text"
+          value=""
+        />
+      </FormGroup>
+      <FormGroup
+        tag="div"
+      >
+        <Label
+          tag="label"
+          widths={
+            Array [
+              "xs",
+              "sm",
+              "md",
+              "lg",
+              "xl",
+            ]
+          }
+        >
+          Context Variable Value
+        </Label>
+        <Input
+          disabled={true}
+          id="contextVariableValue"
+          name="contextVariableValue"
+          onChange={[Function]}
+          type="text"
+          value=""
+        />
+      </FormGroup>
+    </ModalBody>
+    <ModalFooter
+      tag="div"
+    >
+      <Button
+        color="primary"
+        disabled={true}
+        onClick={[Function]}
+        tag="button"
+      >
+        Save
+      </Button>
+    </ModalFooter>
+  </Modal>
+</div>
+`;

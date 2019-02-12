@@ -1,0 +1,110 @@
+@import "styles/variables.scss";
+@import "styles/mixins.scss";
+
+.custom-card.card {
+  border-top: none;
+  border-top-left-radius: 0;
+}
+
+.custom-checkbox-wrapper {
+  .custom-control-label::after, .custom-control-label::before {
+    top: -0.8rem;
+    left: 4px;
+  }
+}
+
+.urlBuilderCard {
+  width: 100%;
+  margin-bottom: 50px;
+
+  .card-header {
+    padding: 0;
+  }
+
+  .iconWrapper {
+    text-align: right;
+    padding-right: 30px;
+
+    .fa {
+      font-size: 20px;
+      color: $main-color;
+      margin-left: 20px;
+      &:hover {
+        cursor: pointer;
+      }
+      &.disabled {
+        opacity: 0.5;
+        pointer-events: none;
+      }
+    }
+  }
+}
+
+.expandCollapseWrapper{
+  padding-left: 5px;
+  cursor: pointer;
+  .expandCollapse{
+    font-size: 25px;
+    color: $main-color;
+  }
+}
+
+.suggestContainer{
+  position: absolute;
+  z-index: 10;
+  top: -13px;
+  overflow: hidden;
+  list-style: none;
+  margin: 0;
+  padding: 2px;
+  border-radius: 3px;
+  border: 1px solid silver;
+  background: $white;
+  font-size: 90%;
+  font-family: monospace;
+  max-height: 20em;
+  overflow-y: auto;
+  display: none;
+  width: 100%;
+  li {
+    position: relative;
+    line-height: 1.5;
+    z-index: 1;
+    list-style: none;
+    &:focus, &:hover {
+      background: $main-color;
+      color: $white;
+    }
+  }
+}
+.undefinedVariablesContainer {
+  width: 50%;
+  display: flex;
+  font-size: 12px;
+  padding: 2px 0;
+  span {
+    width: 50%;
+  }
+  button {
+    width: 50%;
+    font-size: 12px;
+  }
+}
+
+.inputurlValue[type="text"] {
+  font-size: 12px;
+  font-family: arial;
+}
+
+.previewRawDataModal {
+  .modal-body {
+    overflow-x: auto;
+  }
+
+  .previewImages {
+    text-align:  center;
+    img {
+      margin: 10px;
+    }
+  }
+}

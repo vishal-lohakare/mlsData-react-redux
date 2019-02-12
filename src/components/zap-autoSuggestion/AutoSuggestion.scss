@@ -1,0 +1,98 @@
+@import "styles/variables.scss";
+@import "styles/mixins.scss";
+
+.urlVariableList {
+
+  padding: 0;
+
+  li {
+    display: inline-flex;
+    list-style-type: none;
+    margin: 0 20px 15px 0;
+    align-items: center;
+    word-break: break-word;
+
+    .pillWrapper {
+      background: $disabledColor;
+      display: inline-block;
+      padding: 10px;
+      margin-right: 20px;
+      border-radius: 11px;
+      position: relative;
+      min-height: 40px;
+      min-width:70px;
+      .fa-times-circle {
+        margin-left: 5px;
+        position: absolute;
+        top: -7px;
+        right: -3px;
+        font-size: 20px;
+        background: $white;
+        border-radius: 50%;
+      }
+    }
+
+    .addIcon {
+      color: $linkColor;
+      font-size: 21px;
+    }
+
+    .disabledAddNew {
+      color: gray;
+      pointer-events: none;
+    }
+
+    .editEntry {
+      border: 2px gray solid;
+      background: $white;
+    }
+  }
+
+  i {
+    cursor: pointer;
+  }
+
+  .customEdit {
+    margin: 0 10px;
+  }
+}
+
+.autoSuggestInput.form-group {
+  margin: 0;
+}
+
+.autoSuggestList {
+  @include boxShadow(1px, 1px, 8px, 0px, $grey);
+  max-height: 200px;
+  overflow-y: auto;
+}
+.list-group-item.autoSuggestListItem {
+  padding: 0;
+  a {
+    display: inline-block;
+    width: 100%;
+    padding: 5px;
+    color: $black;
+    &:hover, &:active {
+      color: $black;
+      text-decoration: none;
+    }
+  }
+  &:focus {
+    background: $disableLinkColor;
+  }
+}
+
+.customTooltip{
+  .tooltip-inner{
+    background-color: $white;
+    border-bottom: 1px solid $tooltipColor;
+    color: $iconColor;
+    @include boxShadow(5px, 5px, 10px, 0px, $tooltip-box-shadow-color);
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  .arrow::before{
+    border-top-color: $white !important;
+  }
+}

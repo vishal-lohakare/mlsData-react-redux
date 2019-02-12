@@ -1,0 +1,7 @@
+apps:
+  - script: '/opt/node/app/src/server.js'
+    name: 'mls-data-platform-web-ui-stg'
+    instances: 2
+    exec_mode: cluster
+    watch: false
+    log_date_format: 'YYYY-MM-DDTHH:mm:ss.SSSZZ'

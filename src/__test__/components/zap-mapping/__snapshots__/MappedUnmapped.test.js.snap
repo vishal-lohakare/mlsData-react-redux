@@ -1,0 +1,243 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Zap Mapped Unmapped component should render correctly. 1`] = `
+<Row
+  className="mappingContainer"
+  tag="div"
+>
+  <Col
+    lg="5"
+    md="5"
+    tag="div"
+    widths={
+      Array [
+        "xs",
+        "sm",
+        "md",
+        "lg",
+        "xl",
+      ]
+    }
+    xs="12"
+  >
+    <Card
+      tag="div"
+    >
+      <CardHeader
+        className="h5"
+        tag="div"
+      >
+        Unmapped Values
+      </CardHeader>
+      <CardBody
+        tag="div"
+      >
+        <FormGroup
+          tag="div"
+        >
+          <DebounceInput
+            className="form-control unmappedSearch"
+            debounceTimeout={300}
+            element="input"
+            forceNotifyByEnter={true}
+            forceNotifyOnBlur={true}
+            minLength={0}
+            name="search"
+            onChange={[Function]}
+            placeholder="Search Unmapped Values"
+            type="search"
+          />
+        </FormGroup>
+        <Row
+          className="mb-3 mt-3"
+          tag="div"
+        >
+          <Col
+            tag="div"
+            widths={
+              Array [
+                "xs",
+                "sm",
+                "md",
+                "lg",
+                "xl",
+              ]
+            }
+            xs="6"
+          >
+            <a
+              className="disabledNavigationLinks previousLink"
+              href="javascript:void(0)"
+              onClick={[Function]}
+            >
+              Previous
+            </a>
+          </Col>
+          <Col
+            className="text-right"
+            tag="div"
+            widths={
+              Array [
+                "xs",
+                "sm",
+                "md",
+                "lg",
+                "xl",
+              ]
+            }
+            xs="6"
+          >
+            <a
+              className="nextLink"
+              href="javascript:void(0)"
+              onClick={[Function]}
+            >
+              Next
+            </a>
+          </Col>
+        </Row>
+        <Row
+          className="listScroll"
+          tag="div"
+        >
+          <Col
+            lg="12"
+            md="12"
+            tag="div"
+            widths={
+              Array [
+                "xs",
+                "sm",
+                "md",
+                "lg",
+                "xl",
+              ]
+            }
+            xs="12"
+          >
+            <ListGroup
+              flush={true}
+              tag="ul"
+            >
+              <ListGroupItem
+                className="unmapped"
+                key="0"
+                onClick={[Function]}
+                tag="li"
+              >
+                ADDRESS
+              </ListGroupItem>
+            </ListGroup>
+          </Col>
+        </Row>
+      </CardBody>
+    </Card>
+  </Col>
+  <Col
+    className="moveItemWithArrow"
+    lg="2"
+    md="2"
+    tag="div"
+    widths={
+      Array [
+        "xs",
+        "sm",
+        "md",
+        "lg",
+        "xl",
+      ]
+    }
+    xs="12"
+  >
+    <div
+      className="arrowsSection"
+    >
+      <Button
+        className="fa fa-chevron-circle-right custom mappedArrow zapButton"
+        color="secondary"
+        disabled={true}
+        onClick={[Function]}
+        tag="button"
+      />
+      <Button
+        className="fa fa-chevron-circle-left custom unmappedArrow zapButton"
+        color="secondary"
+        disabled={true}
+        onClick={[Function]}
+        tag="button"
+      />
+    </div>
+  </Col>
+  <Col
+    lg="5"
+    md="5"
+    tag="div"
+    widths={
+      Array [
+        "xs",
+        "sm",
+        "md",
+        "lg",
+        "xl",
+      ]
+    }
+    xs="12"
+  >
+    <Card
+      tag="div"
+    >
+      <CardHeader
+        className="h5"
+        tag="div"
+      >
+        Mapped Values
+      </CardHeader>
+      <CardBody
+        tag="div"
+      >
+        <FormGroup
+          tag="div"
+        >
+          <DebounceInput
+            className="form-control mappedSearch"
+            debounceTimeout={300}
+            element="input"
+            forceNotifyByEnter={true}
+            forceNotifyOnBlur={true}
+            minLength={0}
+            name="search"
+            onChange={[Function]}
+            placeholder="Search Mapped Values"
+            type="search"
+          />
+        </FormGroup>
+        <Row
+          className="listScroll"
+          tag="div"
+        >
+          <Col
+            lg="12"
+            md="12"
+            tag="div"
+            widths={
+              Array [
+                "xs",
+                "sm",
+                "md",
+                "lg",
+                "xl",
+              ]
+            }
+            xs="12"
+          >
+            <ListGroup
+              flush={true}
+              tag="ul"
+            />
+          </Col>
+        </Row>
+      </CardBody>
+    </Card>
+  </Col>
+</Row>
+`;

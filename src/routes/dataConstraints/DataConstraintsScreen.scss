@@ -1,0 +1,85 @@
+@import "styles/variables.scss";
+
+.mls-constraint-table.table {
+  font-size: 15px;
+
+  thead {
+    th {
+      vertical-align: middle;
+      &:hover {
+        cursor: pointer;
+      }
+      .fa {
+        margin-left: 10px;
+        &.inactive {
+          color: $disableLinkColor;
+        }
+      }
+    }
+  }
+
+  .cellSize {
+    word-break: break-word;
+  }
+
+  tbody {
+    background: $white;
+  }
+
+  .updateConstrait {
+    cursor: pointer;
+  }
+
+  [disabled] {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+
+  .centered {
+    text-align: center;
+  }
+}
+
+.alert-success.successMsg {
+  margin-bottom: 0;
+}
+
+.mlsConstraintScreen {
+  position: relative;
+  .customPagination {
+    margin-top: 0;
+  }
+  .pageSize{
+    justify-content: flex-end;
+    padding-top: 10px;
+  }
+}
+.modal-dialog.constraintModal {
+  width: 70%;
+  max-width: 100%;
+  .expression {
+    margin-top: 10px;
+  }
+  .form-group {
+    margin-bottom: 20px;
+    &.autoSuggestInput {
+      margin: 0;
+    }
+  }
+  .autoSuggestList {
+    position: absolute;
+    width: 92%;
+    z-index: 11;
+  }
+  .minus-sign {
+    width: 9px;
+    height: 2px;
+    display: inline-block;
+    background: black;
+    vertical-align: middle;
+    margin-left: 6px;
+  }
+  label {
+    font-weight: bold;
+  }
+}

@@ -1,0 +1,175 @@
+@import "styles/variables.scss";
+@import "styles/mixins.scss";
+.contextPanelContainer {
+    position: fixed;
+    z-index: 100;
+    right: 0;
+    top: 150px;
+
+    .card {
+      width: 500px;
+      overflow-x: auto;
+    }
+
+    .textAlignment {
+        text-align: left;
+        padding-left: 80px;
+        box-sizing: border-box;
+        background-color: $white;
+    }
+    .footerButton {
+        margin: 0;
+        background-color: $white;
+        cursor: pointer;
+    }
+    .footerIcon {
+        margin-right: 10px;
+    }
+    .checkboxRow {
+        margin: 10px 25px;
+    }
+    .checkboxList {
+        overflow: auto;
+        max-height: 200px;
+        font-size: 13px;
+    }
+
+    .addMore, .edit {
+        border-right:1px solid $box-shadow-color;
+        text-align: center;
+        i {
+          border: solid 1px $iconColor;
+          border-radius: 50%;
+          padding: 5px;
+          line-height: 10px;
+        }
+    }
+    .delete {
+      text-align: center;
+      i {
+        border: solid 1px $iconColor;
+        border-radius: 50%;
+        padding: 5px;
+        line-height: 10px;
+      }
+    }
+
+    .verticalDivider {
+        font-size:14px;
+        padding:0.75em 0em;
+    }
+
+    .btn-light {
+      width: 78px;
+      height: 60px;
+      background: $white;
+      position: absolute;
+      z-index: 100;
+      padding: 10px;
+      border-radius: 5px;
+      border: none;
+      @include boxShadow(3px, 2px, 10px, 2px, $box-shadow-color);
+      position: relative;
+      &:focus {
+        border: none;
+      }
+
+      &.fa-chevron-circle-right {
+        left: 0;
+        background: $white;
+        color: $iconColor;
+      }
+      &.fa-chevron-circle-left {
+        left: 0;
+        background: $white;
+        color: $iconColor;
+      }
+
+      &::before, .fa-folder-open {
+        position: absolute;
+        font-size: 25px;
+      }
+
+      &::before {
+        left: -13px;
+        bottom: 14px;
+      }
+      .fa-folder-open {
+        right: 15px;
+        bottom: 12px;
+        color: $iconColor;
+        padding-bottom: 4px;
+        padding-right: 6px;
+      }
+      &.hideIcon {
+        width: 0;
+        padding: 0;
+      }
+
+    }
+
+    #toggler {
+        float: left;
+        position: relative;
+    }
+    .collapse {
+        float: right;
+        &.show {
+          @include boxShadow(3px, 2px, 10px, 2px, $box-shadow-color);
+        }
+    }
+
+    input[type="checkbox"] {
+      cursor: pointer;
+      position: absolute;
+      width: 25px;
+      opacity: 0;
+      margin-right: 10px;
+      + label::before {
+        content: '';
+        position: absolute;
+        cursor: pointer;
+        left: -21px;
+        top: 1px;
+        border-radius: 3px;
+        width: 20px;
+        height: 20px;
+        border: solid 1px $border;
+        transition: all 0.1s ease;
+      }
+      &:checked + label::before {
+        border: none;
+        background: $main-color;
+      }
+      + label {
+        margin-left: 10px;
+      }
+    }
+}
+
+.suggestionTableRow {
+  display: flex;
+  .suggestionCell {
+    flex: 1;
+    border: 1px solid $border;
+    border-top: 0;
+    padding: 3px 5px;
+    word-break: break-word;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: pointer;
+    font-size: 15px;
+  }
+  .suggestionCellHeader {
+    font-weight: bold;
+    cursor: auto;
+    font-size: 15px;
+  }
+}
+.contextModal {
+  .autoSuggestList {
+    position: absolute;
+    width: 94%;
+    z-index: 11;
+  }
+}

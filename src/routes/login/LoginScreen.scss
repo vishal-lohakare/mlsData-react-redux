@@ -1,0 +1,22 @@
+@import "styles/variables.scss";
+@import "styles/mixins.scss";
+.loginCardWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .card {
+    @include boxShadow(3px, 2px, 10px, 2px, $box-shadow-color);
+    width: 350px;
+  }
+
+  .card-header, .card-footer {
+    background-color: $white;
+    border: none;
+    padding: 10px 20px;
+  }
+  .card-header {
+    font-weight: 600;
+    font-size: 15px;
+  }
+}

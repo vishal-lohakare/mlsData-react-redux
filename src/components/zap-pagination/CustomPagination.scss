@@ -1,0 +1,89 @@
+@import "styles/variables.scss";
+
+.letterList {
+  text-align: center;
+  .list-group-item {
+    padding-bottom: 0;
+    padding-top: 0;
+    border: none;
+
+    &.clearFilter {
+      padding: 0 0 0 9px;
+      font-size: 17px;
+      text-align: center;
+    }
+
+    &.activeFilter {
+      background: lightgray;
+    }
+
+  }
+
+}
+
+.page-item {
+  .page-link {
+    &.activePage {
+      background-color: $main-color;
+      color: $white;
+    }
+    color: $main-color;
+  }
+}
+
+
+.customPagination {
+  overflow-x: auto;
+  position: relative;
+  width: 100%;
+}
+
+.customCardBody {
+  min-height: 590px;
+  .disabledNavigationLinks {
+    pointer-events: none;
+    color: $grey;
+  }
+}
+
+.searchNote {
+  font-size: 13px;
+  color: gray;
+}
+
+.paginationCard {
+  max-height: 360px;
+  min-height: 360px;
+  overflow-y: auto;
+  font-size: 13px;
+
+    .list-group-item:hover {
+      background-color: #f7f7f7;
+    }
+
+    .list-group-item.selectedValue {
+      background-color: #cfd1d1;
+    }
+    .mappedField {
+      border-radius: 15px;
+      padding: 3px;
+      text-align: center;
+      background: $functions-suggested;
+      color: $white;
+      font-size: 12px;
+      margin-left: 8px;
+    }
+}
+
+.addNewSeaction {
+  margin-top: 30px;
+
+  .fa-plus-circle:before {
+    margin-right: 15px;
+  }
+}
+
+.customCardHeader {
+  display: flex;
+  justify-content: space-between;
+}

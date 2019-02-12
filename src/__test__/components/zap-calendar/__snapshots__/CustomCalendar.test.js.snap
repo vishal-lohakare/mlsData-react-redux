@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Custom Calendar Custom calendar should render correctly 1`] = `
+<div
+  className="customCalendarWrapper"
+>
+  <div
+    className="leftDateContent"
+  >
+    <span>
+      Mon, 24 Dec 2018
+    </span>
+    <Button
+      className="fa fa-calendar calendarButton "
+      color="secondary"
+      innerRef={[Function]}
+      onClick={[Function]}
+      tag="button"
+    />
+  </div>
+</div>
+`;

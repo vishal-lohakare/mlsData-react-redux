@@ -1,0 +1,13 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: mls-data-platform-web-ui
+  namespace: stg-dataengr
+spec:
+  ports:
+  - port: 1338
+    targetPort: 1338
+    name: http
+  selector:
+    component: mls-data-platform-web-ui
+  type: NodePort

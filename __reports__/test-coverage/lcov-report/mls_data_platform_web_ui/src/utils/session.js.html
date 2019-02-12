@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for mls_data_platform_web_ui/src/utils/session.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../prettify.css" />
+    <link rel="stylesheet" href="../../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../../index.html">All files</a> / <a href="index.html">mls_data_platform_web_ui/src/utils</a> session.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">48.39% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>15/31</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">16.67% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>2/12</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">33.33% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>2/6</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">48.39% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>15/31</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-yes">17x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-yes">98x</span>
+<span class="cline-any cline-yes">98x</span>
+<span class="cline-any cline-yes">98x</span>
+<span class="cline-any cline-yes">98x</span>
+<span class="cline-any cline-yes">98x</span>
+<span class="cline-any cline-yes">98x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">98x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">98x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import _ from 'lodash';
+&nbsp;
+const getSessionData = (key) =&gt; {
+  return (key === 'MlsStages') ? <span class="branch-0 cbranch-no" title="branch not covered" >JSON.parse(localStorage.getItem(key)) </span>:  localStorage.getItem(key);
+};
+&nbsp;
+const setSessionData = <span class="fstat-no" title="function not covered" >(k</span>ey, value) =&gt; {
+<span class="cstat-no" title="statement not covered" >  if(key === 'MlsStages'){</span>
+    let stages = <span class="cstat-no" title="statement not covered" >[];</span>
+<span class="cstat-no" title="statement not covered" >    if(getSessionData(key) !== null &amp;&amp; getSessionData(key).length != 0){</span>
+<span class="cstat-no" title="statement not covered" >      stages = getSessionData(key);</span>
+    }
+<span class="cstat-no" title="statement not covered" >    stages = _.union(stages, value);</span>
+<span class="cstat-no" title="statement not covered" >    localStorage.setItem(key, JSON.stringify(stages));</span>
+  }else{
+<span class="cstat-no" title="statement not covered" >    return localStorage.setItem(key, value);</span>
+  }
+};
+&nbsp;
+const clearSessionData = <span class="fstat-no" title="function not covered" >(k</span>ey) =&gt; {
+<span class="cstat-no" title="statement not covered" >  return (key) ? localStorage.removeItem(key) : localStorage.clear();</span>
+};
+&nbsp;
+const setCookieData = <span class="fstat-no" title="function not covered" >(z</span>apToken) =&gt; {
+  const now = <span class="cstat-no" title="statement not covered" >new Date();</span>
+  let time = <span class="cstat-no" title="statement not covered" >now.getTime();</span>
+<span class="cstat-no" title="statement not covered" >  time += 3600 * 1000;</span>
+<span class="cstat-no" title="statement not covered" >  now.setTime(time);</span>
+<span class="cstat-no" title="statement not covered" >  document.cookie =</span>
+    'zapToken=' + zapToken +
+    '; expires=' + now.toUTCString() +
+    '; path=/';
+}
+&nbsp;
+const getCookie = (cname) =&gt; {
+    const name = cname + "=";
+    const decodedCookie = decodeURIComponent(document.cookie);
+    const cookieData = decodedCookie.split(';');
+    for(let i = 0; i &lt;cookieData.length; i++) {
+      let cookieItem = cookieData[i];
+      while (cookieItem.charAt(0) == ' ') {
+<span class="cstat-no" title="statement not covered" >          cookieItem = cookieItem.substring(1);</span>
+      }
+      <span class="missing-if-branch" title="if path not taken" >I</span>if (cookieItem.indexOf(name) == 0) {
+<span class="cstat-no" title="statement not covered" >        return cookieItem.substring(name.length, cookieItem.length);</span>
+      }
+    }
+    return '';
+}
+&nbsp;
+const clearCookie = <span class="fstat-no" title="function not covered" >()</span> =&gt; {
+<span class="cstat-no" title="statement not covered" >  document.cookie =</span>
+  'zapToken=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;';
+}
+&nbsp;
+export { getSessionData, setSessionData, clearSessionData, setCookieData, clearCookie, getCookie };
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Tue Dec 04 2018 12:49:09 GMT+0530 (IST)
+</div>
+</div>
+<script src="../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../sorter.js"></script>
+</body>
+</html>

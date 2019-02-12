@@ -1,0 +1,40 @@
+@import "styles/variables.scss";
+@import "styles/mixins.scss";
+
+header {
+  text-align: center;
+  padding: 15px;
+  position: fixed;
+  top: 0;
+  z-index: 1020;
+  width: 100%;
+  height: inherit;
+  background-color: $white;
+  border-bottom: solid 1px $background;
+}
+
+.headerWrapper {
+  background-color: $white;
+
+  .menuWrapper {
+    text-align: initial;
+  }
+
+  .menuIcon {
+    background-color: transparent;
+    border: none;
+    color: $linkColor;
+    font-size: 25px;
+  }
+  .logoutIcon {
+    margin-right: 10px;
+    color: $iconColor;
+  }
+
+  .logoutWrapper {
+    cursor: pointer;
+    margin-top: 6px;
+    text-align: end;
+  }
+
+}

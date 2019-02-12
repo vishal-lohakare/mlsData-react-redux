@@ -1,0 +1,116 @@
+@import "styles/variables.scss";
+
+.contentWrapper .dateRangeSelector {
+  margin-bottom: 0;
+}
+.monitoringContainer {
+  background: #fff;
+  padding: 10px;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.calendarIcon {
+  margin-left: 5px;
+}
+.dates {
+  display: inline;
+  margin-right: 30px;
+}
+
+.filters {
+  > div {
+    display: inline;
+    margin-right: 20px;
+
+    label {
+      margin-right: 5px;
+    }
+  }
+  .mlsName  {
+    .mlsNameFilter > button {
+      background: #fff;
+      color: $light-grey;
+      border: 1px solid $light-white;
+    }
+    .mlsList {
+      height: 100px;
+      overflow-y: auto;
+    }
+    .dropdown-header {
+      padding: 5px;
+    }
+    .dropdown-divider {
+      margin: 0;
+    }
+    .dropdown-item {
+      cursor: pointer;
+    }
+  }
+
+  .clearFilters {
+    margin-left: 10px;
+  }
+  select {
+    width: auto;
+    display: unset;
+  }
+}
+
+.monitoringTable {
+  thead {
+    span, .eventRows td {
+      display: inline-block;
+      width: 150px;
+      word-break: break-word;
+    }
+    th:not(:last-child) {
+      width: 12%;
+    }
+    th:last-child {
+      width: 52%;
+      span {
+        width: 20%;
+      }
+    }
+ }
+  tbody {
+    tr td {
+      width: 12%;
+    }
+    .noRecords td {
+      width: auto;
+    }
+  }
+  div > td {
+    width: 150px;
+    word-break: break-word;
+  }
+  .dropdownIcon {
+    width: 20px;
+    display: inline-block;
+  }
+  .noRecords {
+    color: $error-color;
+  }
+  .action {
+    .actionName {
+      cursor: pointer;
+    }
+    .actionName:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+}
+
+.progressStatus {
+  background-color: $progressStatus;
+}
+
+.successStatus {
+  background-color: $successStatus;
+}
+
+.failedStatus {
+  background-color: $failedStatus;
+}
+

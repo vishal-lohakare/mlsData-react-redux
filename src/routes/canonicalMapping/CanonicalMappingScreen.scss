@@ -1,0 +1,64 @@
+@import "styles/variables.scss";
+@import "styles/mixins.scss";
+
+.canonicalMappingScreen  {
+  .customCardHeader {
+    padding-top: 30px;
+  }
+  .expressionContent {
+    word-break: break-all;
+  }
+}
+
+.downloadTypeDropdown {
+  padding: 5px 10px;
+  position: absolute;
+  z-index: 1;
+  right: 15px;
+}
+
+.automapModal.modal-dialog {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 10px;
+  .fieldName {
+    word-break: break-word;
+  }
+  .dragBar {
+    width: 7px;
+    border: 1px dotted $grey;
+    background: $border;
+    cursor: w-resize;
+  }
+  .tableSearch {
+    .autoSuggestList {
+      width: 250%;
+    }
+  }
+  .autoMapList {
+    .card-body {
+      border: 1px solid $grey;
+      border-top: 0;
+    }
+    .autoMapRow {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid $grey;
+    }
+    .autoMapRowHeader {
+      margin-right: 10px;
+    }
+    .autoMapBody {
+      height: 313px;
+      overflow-y: auto;
+      padding-right: 17px;
+      .autoMapRow {
+        &.selected {
+          outline: 1px solid yellow;
+          outline-offset: -3px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,69 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ZapInput component ZapInput should render correctly 1`] = `
+<div>
+  <InputGroup
+    tag="div"
+  >
+    <Input
+      className=""
+      defaultValue=""
+      maxLength={40}
+      minLength={20}
+      name="input"
+      onBlur={[Function]}
+      onChange={[Function]}
+      placeholder="type a text"
+      type="text"
+    />
+  </InputGroup>
+</div>
+`;
+
+exports[`ZapInput component ZapInput with label should render correctly 1`] = `
+<div>
+  <label>
+    Label
+  </label>
+  <InputGroup
+    tag="div"
+  >
+    <Input
+      className=""
+      defaultValue=""
+      maxLength={40}
+      minLength={20}
+      name="input"
+      onBlur={[Function]}
+      onChange={[Function]}
+      placeholder="type a text"
+      type="text"
+    />
+  </InputGroup>
+</div>
+`;
+
+exports[`ZapInput component ZapInput with label should render correctly 2`] = `
+<div>
+  <InputGroup
+    tag="div"
+  >
+    <Input
+      className="inputError"
+      defaultValue=""
+      maxLength={40}
+      minLength={20}
+      name="input"
+      onBlur={[Function]}
+      onChange={[Function]}
+      placeholder="type a text"
+      type="text"
+    />
+  </InputGroup>
+  <p
+    className="errorMessageText"
+  >
+    Please enter value
+  </p>
+</div>
+`;

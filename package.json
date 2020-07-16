@@ -23,7 +23,7 @@
     "jest-fetch-mock": "1.6.6",
     "jsonwebtoken": "8.4.0",
     "jwt-simple": "0.5.5",
-    "lodash": "4.17.11",
+    "lodash": "4.17.19",
     "moment": "2.22.2",
     "moment-timezone": "0.5.23",
     "react": "16.4.1",

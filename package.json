@@ -16,7 +16,7 @@
     "classnames": "2.2.6",
     "cors": "2.8.5",
     "downloadjs": "1.4.7",
-    "express": "4.16.4",
+    "express": "4.18.2",
     "fetch-mock": "7.0.5",
     "flow-bin": "0.80.0",
     "font-awesome": "4.7.0",

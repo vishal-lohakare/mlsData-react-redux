@@ -21,7 +21,7 @@
     "flow-bin": "0.80.0",
     "font-awesome": "4.7.0",
     "jest-fetch-mock": "1.6.6",
-    "jsonwebtoken": "8.4.0",
+    "jsonwebtoken": "9.0.0",
     "jwt-simple": "0.5.5",
     "lodash": "4.17.11",
     "moment": "2.22.2",
